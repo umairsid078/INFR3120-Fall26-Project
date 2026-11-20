@@ -1,0 +1,1 @@
+module.exports={"URI": "mongodb+srv://Akeem:q1F4dcF3Ppxkjorn@cluster0.jcspvod.mongodb.net/test"}
