@@ -1,0 +1,26 @@
+<table class="table table-bordered table-striped mt-3">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Status</th>
+      <th>Category</th>
+      <th>Location</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% if (items.length === 0) { %>
+      <tr><td colspan="5">No reports available yet.</td></tr>
+    <% } else { %>
+      <% items.forEach(function(item) { %>
+        <tr>
+          <td><%= item.itemName %></td>
+          <td><%= item.type %></td>
+          <td><%= item.category %></td>
+          <td><%= item.location %></td>
+          <td><%= item.date %></td>
+        </tr>
+      <% }); %>
+    <% } %>
+  </tbody>
+</table>
