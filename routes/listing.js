@@ -1,5 +1,7 @@
 var express = require('express');
 var router = express.Router();
+
+// Import the Item model to interact with the MongoDB database
 var Item = require('../models/item');
 
 router.get('/', async function(req, res, next) {
